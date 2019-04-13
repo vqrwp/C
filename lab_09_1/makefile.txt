@@ -1,0 +1,8 @@
+%.o: %.c
+	gcc -c $< 
+
+test.exe: test.o strcspn.o strlen.o check.o
+	gcc -o test.exe test.o strcspn.o strlen.o check.o
+
+clean:
+	rm *.o *.exe

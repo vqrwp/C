@@ -1,0 +1,11 @@
+%.o: %.c
+	gcc -c $< 
+
+test.exe: test.o strreplacetest.o getlinetest.o strreplace.o search_index.o strcpy.o sstrcmp.c getline.o
+	gcc -o test.exe test.o strreplacetest.o getlinetest.o strreplace.o search_index.o strcpy.o sstrcmp.c getline.o
+
+app.exe: main.o getline.o strcpy.o strreplace.o search_index.o
+	gcc -o app.exe main.o getline.o strcpy.o strreplace.o search_index.o
+
+clean:
+	rm *.o *.exe
