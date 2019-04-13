@@ -1,2 +1,2 @@
 # C
-2nd semester BMSTU 2018
+3nd semester BMSTU 2018
