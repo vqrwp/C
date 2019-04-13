@@ -1,0 +1,13 @@
+%.o: %.c
+	
+	gcc -c $< 
+
+
+
+
+app.exe: main.o print.o push_node.o menu.o add_elem.o push_marks.o delete_node.o
+	gcc -o app.exe -std=c99 -Wall -Werror -pedantic main.o print.o push_node.o menu.o add_elem.o push_marks.o delete_node.o
+
+clean:
+	
+	rm *.o *.exe
