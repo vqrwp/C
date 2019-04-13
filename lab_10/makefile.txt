@@ -1,0 +1,12 @@
+%.o: %.c
+	gcc -c $< 
+
+test.exe: tests.o popfront.c popend.c append.c insert_sort.c read_list.c list_funcs.c push.c menu.c popfronttest.c popbacktest.c appendtest.c sorttest.c
+	gcc -o test.exe -std=c99 -Wall -Werror -pedantic tests.o popfront.c popend.c append.c insert_sort.c read_list.c list_funcs.c push.c menu.c popfronttest.c popbacktest.c appendtest.c sorttest.c
+
+
+app.exe: main.c popfront.o popend.o append.o insert_sort.o read_list.o list_funcs.o push.c menu.o
+	gcc -o app.exe -std=c99 -Wall -Werror -pedantic main.c popfront.o popend.o append.o insert_sort.o read_list.o list_funcs.o push.c menu.o
+
+clean:
+	rm *.o *.exe
