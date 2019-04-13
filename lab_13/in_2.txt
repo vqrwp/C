@@ -1,0 +1,7 @@
+FN4; Terezanova; Physics; 32
+IU9; Skorobogatov; ADS; 47
+FN4; Podguzov; Physics; 70
+IU9; Dubanov; Informatics; 54
+FN4; Vasiliev; Chemistry; 32
+FN12; Stepanov; Diskra; 73
+IU7; Borisov; Python; 80

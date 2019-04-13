@@ -1,0 +1,17 @@
+CFLAGS := -std=c99
+
+CSOURCES := menu.o scan_int.o read_file.o push_node.o show.o add_rec.o comparator.o berkli.o del_rec.o edit_rec.o sort.o filter.o save_in_file.o
+
+TESTSOURCES := scan_int.o read_file.o push_node.o show.o add_rec.o comparator.o berkli.o del_rec.o edit_rec.o sort.o filter.o save_in_file.o test1.o test2.o test3.o
+
+%.o: %.c
+	gcc -c $(CFLAGS) $<
+
+test.exe:  $(TESTSOURCES)
+	gcc $(CFLAGS) $^ test.c -o $@
+
+app.exe: $(CSOURCES)
+	gcc $(CFLAGS) $^ main.c -o $@
+
+clean:
+	rm *.o *.exe

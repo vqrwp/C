@@ -1,0 +1,5 @@
+FN4; Podguzov; Physics; 70
+IU9; Dubanov; Informatics; 54
+FN4; Vasiliev; Chemistry; 32
+FN12; Styrt; Matan; 32
+FN12; Styrt; Matan; 32
