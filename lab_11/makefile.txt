@@ -1,0 +1,16 @@
+%.o: %.c
+	
+	gcc -c $< 
+
+
+
+test.exe: test.o my_snprintf.o
+	gcc -o test.exe test.o my_snprintf.o
+
+
+app.exe: main.o my_snprintf.o
+	gcc -o app.exe main.o my_snprintf.o
+
+clean:
+	
+	rm *.o *.exe
