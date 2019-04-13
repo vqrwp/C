@@ -1,0 +1,6 @@
+aaaa 1
+bbb  1
+cc   1
+ddd  2
+cccc 1
+aada 1

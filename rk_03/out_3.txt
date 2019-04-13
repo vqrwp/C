@@ -1,0 +1,6 @@
+                           aaa   2
+                          bvbb   1
+                          caac   1
+                         dddaa   1
+                           ddd   1
+                            cc   1
